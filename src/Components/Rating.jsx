@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Star from "./Star";
 import Modal from "./Modal";
+import Button from "./Button";
 
 function Rating(){
 
@@ -45,7 +46,8 @@ function Rating(){
                 ))}
             </div>
             {rating > 0 && <p className="feedback">{feedbackMessages[rating-1]}</p>}
-            <button className="submit-btn" onClick={handleSubmit} disabled={rating ===  0} >Submit</button>
+            {/* <button className="submit-btn" onClick={handleSubmit} disabled={rating ===  0} >Submit</button> */}
+            <Button className="submit-btn" disabled={rating ===  0} onClick={handleSubmit}>Submit</Button>
 
 {/* MODAL */}
             {
