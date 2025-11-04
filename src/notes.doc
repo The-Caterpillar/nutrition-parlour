@@ -1,0 +1,13 @@
+1. CONTROLLED INPUTS:
+A control input in a form element like a text field or select box whose value
+is managed by react state
+USES:
+- real time validation(ex: password strength)
+- auto-formatting input(ex: automatically adding dashes in a phone number)
+- keeping data even if input disappears
+
+2. UNCONTROLLED INPUTS: form elements where react doesnt manage input's state.
+Instead, DOM handles the data, just as in plain html.
+
+Instead of using useState to track the value, we use ref to access the value
+only when you need it, like when the form is submitted.
