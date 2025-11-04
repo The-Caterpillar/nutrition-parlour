@@ -1,7 +1,11 @@
+
+
 import { useState } from "react";
 import Star from "./Star";
 import Modal from "./Modal";
 import Button from "./Button";
+import './Rating.css'
+// import rating.className
 
 function Rating(){
 
@@ -29,6 +33,7 @@ function Rating(){
 
     return (<>
         {/* <div style={{textAlign: 'center'}}> */}
+        <div className="ratings-body">
         <div className="rating-container" style={styles.container}>
             <h2 style={styles.heading}>Rate your experience</h2>
             {/* {hover} */}
@@ -54,6 +59,7 @@ function Rating(){
                 submitted &&
                     ( <Modal rating={rating} closeModal={closeModal}/> )
             }
+        </div>
         </div>
     </>);
 }
