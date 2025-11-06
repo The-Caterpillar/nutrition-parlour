@@ -18,20 +18,12 @@ function NoteForm({notes, setNotes}) {
     const [isFormVisible,setIsFormVisible] = useState(false);
 
     const handleChange = (e) => {
-        // console.log(e.target.value);
         setFormData({...formData,[e.target.name]: e.target.value});
     }
 
-    const handleFormToggle = () => {
-        if(!isFormVisible)
-            { setIsFormVisible(true); }
-        else
-            { setIsFormVisible(false); }
-    }
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // console.log('form Submitted', formData);
 
         // Validation
         if(!formData.title)

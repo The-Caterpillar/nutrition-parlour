@@ -5,7 +5,6 @@ import Star from "./Star";
 import Modal from "./Modal";
 import Button from "./Button";
 import './Rating.css'
-// import rating.className
 
 function Rating(){
 
@@ -30,9 +29,7 @@ function Rating(){
     }
 
     // setRating
-
     return (<>
-        {/* <div style={{textAlign: 'center'}}> */}
         <div className="ratings-body">
         <div className="rating-container" style={styles.container}>
             <h2 style={styles.heading}>Rate your experience</h2>
@@ -51,10 +48,8 @@ function Rating(){
                 ))}
             </div>
             {rating > 0 && <p className="feedback">{feedbackMessages[rating-1]}</p>}
-            {/* <button className="submit-btn" onClick={handleSubmit} disabled={rating ===  0} >Submit</button> */}
             <Button className="submit-btn" disabled={rating ===  0} onClick={handleSubmit}>Submit</Button>
 
-{/* MODAL */}
             {
                 submitted &&
                     ( <Modal rating={rating} closeModal={closeModal}/> )
