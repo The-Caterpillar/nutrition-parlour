@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Star from "./Star";
 import Modal from "./Modal";
-import Button from "./Button";
+import Button from "../Button/Button";
 import './Rating.css'
 
 function Rating(){

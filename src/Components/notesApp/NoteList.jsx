@@ -1,6 +1,4 @@
 // To render all the notes as a list
-import Button from "./Button";
-import Notes from "./Notes";
 import Note from "./Note";
 
 const NoteList = ({ notes, deleteNote }) => {

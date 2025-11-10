@@ -2,7 +2,7 @@
 
 .notes-body{
     @apply bg-purple-900;
-    height: 100vh;
+    height: 1000vh;
     width: 100vw;
     margin: 0;
     padding: 10px;

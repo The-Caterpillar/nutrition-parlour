@@ -1,11 +1,19 @@
 // The main app for the notes page
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import NoteForm from "./NoteForm";
 import "./NoteForm.css";
 import NoteList from "./NoteList";
+
 function Notes() {
-  const [notes, setNotes] = useState([]);
+  const [notes, setNotes] = useState(()=>{
+    const notes = JSON.parse(localStorage.getItem('notes'));
+    return notes || [] ;
+  });
+
+  useEffect(()=> {
+    localStorage.setItem('notes',JSON.stringify(notes));
+  }, [notes]);
 
   const deleteNote = (id) => {
     const confirmDelete = window.confirm(

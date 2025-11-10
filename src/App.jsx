@@ -1,5 +1,5 @@
-import Rating from "./Components/Rating"
-import Notes from "./Components/Notes"
+import Rating from "./Components/Ratings/Rating"
+import Notes from "./Components/notesApp/Notes"
 function App() {
 
   return (

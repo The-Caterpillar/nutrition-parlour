@@ -1,7 +1,7 @@
 // The create-note-form
 import { useState } from "react";
 import "./NoteForm.css";
-import Button from "./Button";
+import Button from "../Button/Button";
 
 function NoteForm({ notes, setNotes }) {
   // const [title,setTitle] = useState('Title');
