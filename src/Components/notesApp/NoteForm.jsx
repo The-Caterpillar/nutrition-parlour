@@ -28,18 +28,21 @@ function NoteForm({ notes, setNotes }) {
     // Validation
     if (!formData.title) return;
 
+    if(formData.description === '')
+    {
+      formData.description = '---';
+    }
     // Create new note object
-    const newNote = { id: Date.now(), ...formData };
-
+      const newNote = { id: Date.now(), ...formData };
     // Add notes to state
-    setNotes([newNote, ...notes]);
+      setNotes([newNote, ...notes]);
 
     // reset form data
     setFormData({
       title: "",
       category: "Work",
-      priority: "Medium",
-      description: "---",
+      priority: "High",
+      description: "",
     });
   };
 
