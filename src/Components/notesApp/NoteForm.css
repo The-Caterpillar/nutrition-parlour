@@ -1,8 +1,12 @@
 @import 'tailwindcss';
 
-.notes-body{
+body{
+    /* background: purple; */
     @apply bg-purple-900;
-    height: 1000vh;
+}
+
+.notes-body{
+    height: 100%;
     width: 100vw;
     margin: 0;
     padding: 10px;
